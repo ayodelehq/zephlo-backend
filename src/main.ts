@@ -10,6 +10,7 @@ async function bootstrap() {
     exclude: [{ path: 'health', method: RequestMethod.GET }],
   });
 
+  // Swagger configuration
   const config = new DocumentBuilder()
     .setTitle('Zephlo API')
     .setDescription('Inventory, transfers, purchase orders and entity engine')
